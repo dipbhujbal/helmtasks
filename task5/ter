@@ -1,0 +1,8 @@
+helm install mysqlrel mybitnami/mysql --set auth.rootPassword=dip97
+dipali@dipali-bhujbal:~/helm_workshop/task2$   MYSQL_ROOT_PASSWORD=$(kubectl get secret --namespace default mysqlrel -o jsonpath="{.data.mysql-root-password}" | base64 -d)
+dipali@dipali-bhujbal:~/helm_workshop/task2$ echo $MYSQL_ROOT_PASSWORD
+dip97
+dipali@dipali-bhujbal:~/helm_workshop/task2$ ^C
+dipali@dipali-bhujbal:~/helm_workshop/task2$ kubectl run mysqlrel-client --rm --tty -i --restart='Never' --image  docker.io/bitnami/mysql:8.0.31-debian-11-r0 --namespace default --env MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD --command -- bash
+If you don't see a command prompt, try pressing enter.
+
