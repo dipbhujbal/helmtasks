@@ -23,3 +23,13 @@
             name: {{ .Release.Name }}-nginx-configmap
   
   ```
+
+2. Create the helm template and verify the changes
+```
+helm template <path to the sample helm chart>
+```
+
+3. Install the helm chart 
+ ```
+ helm install <release-name> <chart>
+ ```
