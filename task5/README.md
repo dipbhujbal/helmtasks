@@ -1,6 +1,6 @@
 ## Tasks
 
-**Note Use templare files from https://github.com/infracloudio/citadel-internal/tree/master/workshops/helm/kubernetes_manifests and create a chart.
+**Note Use template files from https://github.com/infracloudio/citadel-internal/tree/master/workshops/helm/kubernetes_manifests and create a chart.
 
 1.  Each and every manifest should be templated such that the name of each kubernetes resource should get generated as <release_name>-helm-module>
 
@@ -29,7 +29,7 @@
     - port: {{ .Values.service.port }}
     ```
    
- 3.  serviceaccount will be created using kubernetes manifest provided and kubernetes deployment resource will be created in this service account ELSE the serviceaccount creation will be skipped and kubernetes deployment resource will be created in the default serviceaccount
+ 3.  The serviceaccount will be created using kubernetes manifest provided and kubernetes deployment resource will be created in this service account ELSE the serviceaccount creation will be skipped and kubernetes deployment resource will be created in the default serviceaccount
 
      nginx-sa.yaml
    
