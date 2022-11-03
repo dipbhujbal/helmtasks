@@ -1,4 +1,4 @@
-### Task 2 
+### Task 3 
  Install latest version of mysql helm chart from mybitnami helm repository that you added earlier in your local. 
  Override the rootPassword value of mysql helm chart to something of your choice during installation.
  
