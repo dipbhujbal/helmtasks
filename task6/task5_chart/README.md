@@ -1,7 +1,7 @@
 ## Task5
 
- Create a subchart in your existing helm chart from scratch
- Add a bitnami mysql helm chart as the subchart for the existing sample chart you created earlier. Make sure you pass a custom value forrootPassword from your helm chart to mysql helm chart. Install your helm chart and verify the creation of mysql helm chart resources.
+ Create a subchart in your existing helm chart from scratch.
+ Add a bitnami mysql helm chart as the subchart for the existing sample chart you created earlier. Pass a custom value for rootPassword from your helm chart to mysql helm chart. Install your helm chart and verify the creation of mysql helm chart resources.
  
  
  Chart.yaml
